@@ -17,12 +17,12 @@ $(document).ready(function(){
 
 	var arr = [];
 	var img={
-		1:"http://etc.usf.edu/clipart/42100/42158/die_01_42158_lg.gif",
-		2:"http://moziru.com/images/dice-clipart-side-2-5.gif",
-		3:"http://etc.usf.edu/clipart/42100/42160/die_03_42160_sm.gif",
-		4:"http://etc.usf.edu/clipart/42100/42161/die_04_42161_md.gif",
-		5:"http://etc.usf.edu/clipart/42100/42162/die_05_42162_lg.gif",
-		6:"http://etc.usf.edu/clipart/42100/42164/die_06_42164_lg.gif"
+		1:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Dice-1-b.svg/600px-Dice-1-b.svg.png",
+		2:"http://laoblogger.com/images/2-dice-clipart-5.jpg",
+		3:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Dice-3-b.svg/600px-Dice-3-b.svg.png",
+		4:"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Dice-4-b.svg/768px-Dice-4-b.svg.png",
+		5:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Dice-5-b.svg/768px-Dice-5-b.svg.png",
+		6:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Dice-6a-b.svg/1024px-Dice-6a-b.svg.png"
 	};
 	$(".roll1").click(function(){
 		var number = Math.floor(Math.random() * 6) + 1;
@@ -51,7 +51,7 @@ $(document).ready(function(){
 		for (var i = 0; i < arr.length; i++) {
 			sum +=arr[i]
 		}
-		$('.sumResult').html("your result is : "+sum);
+		$('.sumResult').html(p1+" - "+sum);
 		
 		if (sum>0 && sum1>0) {
 			setTimeout(yazan, 400);
@@ -89,7 +89,7 @@ $(document).ready(function(){
 		for (var y = 0; y < arr1.length; y++) {
 			sum1 +=arr1[y]
 		}
-		$('.sumResult1').html("your result is : "+sum1);
+		$('.sumResult1').html(p2+" - "+sum1);
 		
 		if (sum>0 && sum1>0) {
 			setTimeout(yazan, 400);

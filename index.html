@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>game</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- bootstrap style -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 	<!-- anas's style --> 
@@ -20,36 +21,41 @@
 </head>
 <body>
 	<header>
-		<div>
-			<button class="playAgain">play again</button>
-		</div>
 		<div class="name row">
-			<div class="col-lg-4 col-md-4 col-sm-5 col-5"><h2 class="text-center p1">first player</h2></div>
-			<div class="col-lg-4 col-md-4 col-sm-2 col-2"><h2 class="text-center">VS</h2></div>
-			<div class="col-lg-4 col-md-4 col-sm-5 col-5"><h2 class="text-center p2">second player</h2></div>
+			
+			<div class="col-lg-12 col-md-12 col-sm-12 col-12"><h2 class="text-center">VS</h2></div>
+			
 		</div>
 	</header> 
 	<section class="row">
 		<div class="col-lg-3">
+			<div><h2 class="text-center p1">first player</h2></div>
 			<h4>first round:<span class="result1"></span></h4>
 			<h4>second round:<span class="result2"></span></h4>
 			<h4>third round:<span class="result3"></span></h4>
-			<button class="roll1">Roll</button>
-			<button class="roll2">Roll</button>
-			<button class="roll3">Roll</button>
-			<span class="sumResult"></span>
+			<button class="roll1"><i class="fa fa-braille fa-2x" aria-hidden="true"></i></button>
+			<button class="roll2"><i class="fa fa-braille fa-2x" aria-hidden="true"></i></button>
+			<button class="roll3"><i class="fa fa-braille fa-2x" aria-hidden="true"></i></button>
+			
 		</div>
-		<div class="col-lg-6"><img class="dice" src="http://moziru.com/images/dice-clipart-animated-gif-11.gif"></div>
+		<div class="col-lg-6 img"><img class="dice" src="http://moziru.com/images/dice-clipart-animated-gif-11.gif"></div>
 		<div class="col-lg-3">
+			<div><h2 class="text-center p2">second player</h2></div>
 			<h4>first round:<span class="result4"></span></h4>
 			<h4>second round:<span class="result5"></span></h4>
 			<h4>third round:<span class="result6"></span></h4>
-			<button class="roll4">Roll</button>
-			<button class="roll5">Roll</button>
-			<button class="roll6">Roll</button>
-			<span class="sumResult1"></span>
+			<button class="roll4"><i class="fa fa-braille fa-2x" aria-hidden="true"></i></button>
+			<button class="roll5"><i class="fa fa-braille fa-2x" aria-hidden="true"></i></button>
+			<button class="roll6"><i class="fa fa-braille fa-2x" aria-hidden="true"></i></button>
+			
 		</div>
 	</section>
+	<footer>
+		<div>
+			<span class="sumResult"></span><span class="sumResult1"></span>
+			<button class="playAgain">play again</button>
+		</div>
+	</footer>
 </body>
 </html>
 
