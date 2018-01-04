@@ -1,0 +1,10 @@
+.row div {
+	border: 1px solid black;
+}
+.roll1 ,.roll2, .roll3,.roll4, .roll5 ,.roll6{
+	display: none;
+}
+.dice{
+	width: 100%;
+	height: 100%;
+}
